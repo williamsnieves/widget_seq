@@ -1,5 +1,15 @@
 import React from 'react'
 
+/** @jsx jsx */
+import { jsx, css } from '@emotion/core'
+import {
+  mainContainer,
+  boxHeader,
+  title,
+  selectorPrices,
+  links
+} from './styles/FinanceWidgetStyle'
+
 import Loader from './common/Loader'
 
 const FinanceWidget = props => {
