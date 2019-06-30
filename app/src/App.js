@@ -20,7 +20,6 @@ class App extends React.Component {
       showModal: !this.state.showModal
     })
   }
-
   updatePrice (price) {
     if (price !== undefined) {
       const formatedPrice = getPurchasePriceFormated(price)
@@ -34,6 +33,11 @@ class App extends React.Component {
     }
   }
 
+  closeModal = () => {
+    this.setState({
+      showModal: false
+    })
+  }
 
   onHandleAgreements = select => {
     const { instalmentFee } = JSON.parse(select.target.value)
