@@ -2,7 +2,6 @@ import React from 'react'
 import FinanceWidget from './FinanceWidget'
 import CreditAgreements from './modules/CreditAgreements'
 import { getPurchasePriceFormated } from './modules/utils'
-import PaymentInfo from './common/PaymentInfo'
 
 class App extends React.Component {
   state = {
